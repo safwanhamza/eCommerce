@@ -1,0 +1,279 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ... (rest of your existing CSS) ... */
+
+/* Navigation bar */
+.navbar {
+    color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: #333; /* Default text color - eCommerce part will be blue via inline style */
+}
+
+/* New style for the right side of the navbar to group button */
+.navbar-right {
+    display: flex; /* Use flexbox to align items if needed in future */
+    align-items: center; /* Vertically align items in navbar-right if needed */
+}
+
+.navbar-btn {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Ensure button link doesn't have underline */
+}
+
+.navbar-btn:hover {
+    background-color: white;
+    color: green;
+}
+
+/* ... (rest of your existing CSS) ... */
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745; /* Green button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Header Section */
+header {
+    background-color: #f8f9fa; /* Light gray header background */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #007bff; /* Blue title color */
+}
+
+.header-cta {
+    color: #6c757d; /* Gray "Shop Now" text */
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+/* Welcome Section */
+.welcome-section {
+    background-image: url('assets/store.jpg'); 
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.welcome-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.explore-button {
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+
+/* Why Choose Section (Features) */
+.why-choose-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-choose-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.feature-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background-color: #ddd; /* Placeholder icon background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; /* Adjust icon size if needed */
+    color: #777; /* Icon color */
+    margin-bottom: 15px; /* Spacing below icon */
+}
+
+.feature-icon img {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 0 auto 15px; /* Make sure image is also circular if you use images */
+}
+
+
+.feature-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #666;
+}
+
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f0f8ff; /* Very light blue background */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.testimonial-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.testimonial-author {
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #555;
+}
+
+
+/* CTA Section (Bottom Button) */
+.cta-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff; /* White background for CTA section */
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    font-size: 1.5em;
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark gray footer background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+
+/* Responsive adjustments (simple) */
+@media (max-width: 768px) {
+    .welcome-section {
+        padding: 80px 20px;
+    }
+
+    .welcome-section h2 {
+        font-size: 2.5em;
+    }
+
+    .why-choose-section {
+        padding: 60px 20px;
+    }
+
+    .why-choose-section h2 {
+        font-size: 2em;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Stack features on smaller screens */
+    }
+
+    .testimonial-box {
+        padding: 30px;
+    }
+
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 2em;
+    }
+}
