@@ -5,7 +5,7 @@
 
 ## Tech Stack:
 - Python 
-- Djang
+- Django
 - SQL
 - REST APIs
 - React JS
